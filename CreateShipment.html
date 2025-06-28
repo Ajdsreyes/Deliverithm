@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Shipment - Shipment Information</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/CreateShipment.css" />
+</head>
+
+<!--header-->
+<body>
+  <header class="navbar">
+    <div class="logo">deliver<span class="highlight">ithm</span></div>
+    <nav class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#" class="active">Create Shipment</a>
+      <a href="#">Shipping History</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="shipment-container">
+    <div class="shipment-card">
+      <img src="images/arrow-left-circle.png" alt="Back Button" class="back-button" />
+      <h2>Shipment Information</h2>
+      <form class="shipment-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Sender Name</label>
+            <input type="text" placeholder="Sender Name">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="Sender Email">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Receiver Name</label>
+            <input type="text" placeholder="Receiver Name">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="Receiver Email">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label>Receiver’s Location</label>
+            <input type="text" placeholder="Receiver Location">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" placeholder="Postal Code">
+          </div>
+          <div class="form-group">
+            <label>Type of Package</label>
+            <select>
+              <option>Select Type</option>
+              <option>Box</option>
+              <option>Envelope</option>
+              <option>Crate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row weight-dimension-row">
+          <div class="form-group package-weight-group">
+            <label>Package Weight</label>
+            <input type="text" placeholder="Weight (kg)">
+          </div>
+          <div class="form-group dimension-group">
+            <label>Dimension</label>
+            <div class="dimension-fields">
+              <input type="text" placeholder="Length">
+              <input type="text" placeholder="Width">
+              <input type="text" placeholder="Height">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="proceed-btn">Proceed</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer class="footer">
+    Precision Routing, Perfect Timing.
+  </footer>
+</body>
+</html>
