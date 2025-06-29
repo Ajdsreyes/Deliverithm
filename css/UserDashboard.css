@@ -92,6 +92,20 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.card-link {
+  color: #004c4c;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.card-link:hover {
+  color: #002f2f;
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
 .grid .card:nth-child(3) {
   grid-column: span 2;
   justify-self: center;

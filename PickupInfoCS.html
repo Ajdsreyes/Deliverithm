@@ -7,11 +7,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/ShipmentInfoCS.css" />
+  <link rel="stylesheet" href="css/PickupInfoCS.css" />
 </head>
-<!--header-->
 <body>
+  <!-- Header -->
   <header class="navbar">
     <div class="logo">deliver<span class="highlight">ithm</span></div>
     <nav class="nav-links">
@@ -21,11 +20,12 @@
       <a href="#">Contact Us</a>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main class="pickup-container">
     <div class="pickup-card">
       <img src="images/arrow-left-circle.png" alt="Back Button" class="back-button" />
       <h2>Pickup Information</h2>
-
       <form class="pickup-form">
         <div class="form-row">
           <div class="form-group">
@@ -53,7 +53,6 @@
             <input type="text" placeholder="Other Information" />
           </div>
         </div>
-
         <div class="form-actions">
           <button type="submit" class="proceed-btn">Proceed</button>
         </div>
@@ -61,9 +60,22 @@
     </div>
   </main>
 
-  <!--footer-->
+<div class="modal hidden" id="confirm-modal">
+  <div class="modal-content">
+    <p>Are you sure you want to proceed?</p>
+    <div class="modal-buttons">
+      <button id="yes-btn" class="yes-btn">Yes</button>
+      <button id="no-btn" class="no-btn">No</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
   <footer class="footer">
     Precision Routing, Perfect Timing.
   </footer>
+
+  <script src="js/PickupInfoCS.js"></script>
 </body>
 </html>

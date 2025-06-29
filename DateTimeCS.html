@@ -3,47 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deliverithm - Pickup Date and Time</title>
+  <title>Deliverithm – Pickup Date & Time</title>
 
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/DateTimeCS.css" />
+
 </head>
 <body>
-  <!--header-->
   <div class="page">
+    <!-- header navigation -->
     <header class="navbar">
       <div class="logo">deliver<span class="highlight">ithm</span></div>
       <nav class="nav-links">
-        <a href="#">Dashboard</a>
-        <a href="#" class="active">Create Shipment</a>
-        <a href="#">Shipping History</a>
-        <a href="#">Contact Us</a>
+        <a href="#" id="dashboard">Dashboard</a>
+        <a href="#" class="active" id="create">Create Shipment</a>
+        <a href="#" id="history">Shipping History</a>
+        <a href="#" id="contact">Contact Us</a>
       </nav>
     </header>
 
     <main class="pickup-container">
       <div class="pickup-card">
-        <img src="images/arrow-left-circle.png" alt="Back Button" class="back-button" />
+        <img src="images/arrow-left-circle.png" alt="Back" class="back-button" id="backBtn" />
         <h2>Pickup Date and Time</h2>
 
         <form class="pickup-form">
           <div class="form-row">
             <div class="form-group full-width">
               <label>Pickup Date</label>
-              <input type="text" placeholder="MM/ DD/ YYYY" />
+              <input type="text" id="pickup-date" placeholder="MM/DD/YYYY" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label>Earliest Pickup Time</label>
-              <input type="text" placeholder="Time" />
+              <input type="text" id="earliest-time" placeholder="Time" />
             </div>
             <div class="form-group">
               <label>&nbsp;</label>
-              <select>
+              <select id="earliest-ampm">
                 <option value="">AM/PM</option>
                 <option value="AM">AM</option>
                 <option value="PM">PM</option>
@@ -54,11 +56,11 @@
           <div class="form-row">
             <div class="form-group">
               <label>Latest Pickup Time</label>
-              <input type="text" placeholder="Time" />
+              <input type="text" id="latest-time" placeholder="Time" />
             </div>
             <div class="form-group">
               <label>&nbsp;</label>
-              <select>
+              <select id="latest-ampm">
                 <option value="">AM/PM</option>
                 <option value="AM">AM</option>
                 <option value="PM">PM</option>
@@ -66,10 +68,10 @@
             </div>
           </div>
 
-          <div class="form-row">
-            <div class="form-group full-width">
-              <label>Special Instructions</label>
-              <input type="text" placeholder="Special Instructions" />
+      <div class="form-row">
+        <div class="form-group full-width">
+        <label>Special Instructions</label>
+          <input type="text" id="special-instructions" placeholder="Special Instructions" />
             </div>
           </div>
 
@@ -80,10 +82,20 @@
       </div>
     </main>
 
-    <!--footer-->
-    <footer class="footer">
-      Precision Routing, Perfect Timing.
-    </footer>
+    <!-- "shipment created" -->
+  <div div class="modal hidden" id="confirm-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <p p id="modal-title">Shipment Created.</p>
+    <div class="modal-buttons">
+      <button id="ok-btn" class="yes-btn" aria-label="Confirm proceed">OK</button>
+      </div>
+    </div>
   </div>
+
+    <!-- Footer -->
+    <footer class="footer">Precision Routing, Perfect Timing.</footer>
+  </div>
+
+  <script src="js/DateTimeCS.js"></script>
 </body>
 </html>

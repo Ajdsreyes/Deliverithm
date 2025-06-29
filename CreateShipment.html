@@ -78,14 +78,6 @@
             <label>Package Weight</label>
             <input type="text" placeholder="Weight (kg)">
           </div>
-          <div class="form-group dimension-group">
-            <label>Dimension</label>
-            <div class="dimension-fields">
-              <input type="text" placeholder="Length">
-              <input type="text" placeholder="Width">
-              <input type="text" placeholder="Height">
-            </div>
-          </div>
         </div>
 
         <div class="form-actions">
@@ -95,9 +87,22 @@
     </div>
   </main>
 
+  <!--confirmation-->
+<div id="confirmation-modal" class="modal hidden">
+  <div class="modal-content">
+    <p>Are you sure you want to proceed?</p>
+    <div class="modal-buttons">
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+  </div>
+</div>
+
   <!--footer-->
   <footer class="footer">
     Precision Routing, Perfect Timing.
   </footer>
+
+  <script src="js/CreateShipment.js"></script>
 </body>
 </html>
